@@ -17,7 +17,7 @@ def getdata(parent, rfid):
     print(f"Method 'getdata' got called with inputParameter: {rfid}")
     return (
                 ua.Variant(rfid, ua.VariantType.UInt64),        #RFID
-                ua.Variant(db_value, ua.VariantType.UInt64),    #Value from database
+                ua.Variant(db_value, ua.VariantType.UInt64)     #Value from database
             )  
             
 if __name__ == "__main__":
@@ -74,7 +74,7 @@ if __name__ == "__main__":
                                         [
                                             #Output-Arguments:
                                             ua.VariantType.UInt64, #RFID
-                                            ua.VariantType.UInt64, #Value from database
+                                            ua.VariantType.UInt64  #Value from database
                                         ]
                                     )
 
