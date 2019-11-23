@@ -53,7 +53,7 @@ if __name__ == "__main__":
     # except Exception as e:
     #     print(e)
 
-    #S7-1500 Checks frequently the service level so make sure it exists (http://documentation.unified-automation.com/uasdkcpp/1.5.3/html/L2ServerRedundancy.html)
+    #S7-1500 Checks frequently the service level so make sure it has a value (http://documentation.unified-automation.com/uasdkcpp/1.5.3/html/L2ServerRedundancy.html)
     servicelevel_node = server.get_node("ns=0;i=2267") #Service-Level Node
     value = 255 #>=200 Serviclevel good
     dv = ua.DataValue(ua.Variant(value, ua.VariantType.Byte)) #if you want to write a node value with <set_value()> you need to create a DataValue Object
