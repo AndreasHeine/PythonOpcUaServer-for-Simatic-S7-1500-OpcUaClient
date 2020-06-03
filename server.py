@@ -37,7 +37,7 @@ if __name__ == "__main__":
                     "Anonymous", "Basic256Sha256", "Username"
                 ]
     server.set_security_IDs(policyIDs)
-    address_space = server.register_namespace("PythonOpcUaServer/namespace/")
+    address_space = server.register_namespace("http://andreas-heine.net/UA")
 
     """
     OPC-UA-Modeling
