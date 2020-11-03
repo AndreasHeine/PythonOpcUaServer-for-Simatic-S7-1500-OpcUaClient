@@ -52,9 +52,6 @@ if __name__ == "__main__":
     dv = ua.DataValue(ua.Variant(value, ua.VariantType.Byte)) #if you want to write a node value with <set_value()> you need to create a DataValue Object
     servicelevel_node.set_value(dv)
 
-    parameter_obj = server.nodes.objects.add_object(address_space, "Parameter") #just a example object
-    token_node = parameter_obj.add_variable(address_space, "token", 0) #just a example variable
-
     method_obj = server.nodes.objects.add_object(address_space, "Methods")
     method_node = method_obj.add_method(
                                         address_space, 
